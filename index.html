@@ -1,12 +1,11 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Nexora Digital: conhecimento, educação e tecnologia. Conheça nossos cursos e guias digitais.">
+    <meta name="description" content="Nexora Digital — conhecimento, inovação e produtos digitais para transformar ideias em resultados.">
 
     <meta name="theme-color" content="#080808">
 
@@ -14,301 +13,282 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- CABEÇALHO -->
-
     <header class="header">
+        <div class="container header-content">
 
-        <nav class="navbar">
-
-            <a href="#inicio" class="logo">
-                NEXORA<span>.</span>
+            <a href="index.html" class="logo">
+                NEXORA<span> DIGITAL</span>
             </a>
 
-            <div class="nav-links">
-
+            <nav class="navbar" id="navbar">
                 <a href="#inicio">Início</a>
-
                 <a href="#sobre">Sobre nós</a>
-
-                <a href="#cursos">Cursos e Guias</a>
-
+                <a href="#produtos">Produtos</a>
                 <a href="#contato">Contato</a>
+            </nav>
 
-            </div>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="navbar"
+            >
+                ☰
+            </button>
 
-            <a href="#cursos" class="nav-button">
-                Conhecer produtos
-            </a>
-
-        </nav>
-
+        </div>
     </header>
 
 
-    <!-- CONTEÚDO PRINCIPAL -->
-
+    <!-- INÍCIO -->
     <main>
 
-        <!-- APRESENTAÇÃO -->
-
         <section class="hero" id="inicio">
+            <div class="container hero-content">
 
-            <div class="hero-content">
-
-                <span class="eyebrow">
-                    BEM-VINDO À NEXORA DIGITAL
+                <span class="hero-label">
+                    CONHECIMENTO • INOVAÇÃO • TRANSFORMAÇÃO
                 </span>
 
                 <h1>
-                    O seu próximo nível
-                    <span>começa aqui.</span>
+                    Transformamos conhecimento em
+                    <span>novas possibilidades.</span>
                 </h1>
 
                 <p>
-                    Conhecimento, educação e inovação
-                    para desenvolver habilidades,
-                    transformar possibilidades e
-                    construir novas oportunidades.
+                    Na Nexora Digital, acreditamos que o conhecimento
+                    pode transformar vidas. Criamos e apresentamos
+                    produtos digitais com conteúdo, propósito e qualidade.
                 </p>
 
                 <div class="hero-buttons">
-
-                    <a href="#cursos" class="button-primary">
-                        Explorar nossos produtos
+                    <a href="#produtos" class="btn btn-primary">
+                        Conheça nossos produtos
                     </a>
 
-                    <a href="#sobre" class="button-secondary">
-                        Conheça a empresa
+                    <a href="#sobre" class="btn btn-secondary">
+                        Conheça a Nexora
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about section" id="sobre">
+            <div class="container">
+
+                <span class="section-label">QUEM SOMOS</span>
+
+                <h2>
+                    Conhecimento com
+                    <span>propósito.</span>
+                </h2>
+
+                <p>
+                    A Nexora Digital é uma empresa dedicada ao universo
+                    dos produtos digitais, buscando conectar pessoas
+                    a conteúdos que possam contribuir para seu
+                    desenvolvimento pessoal e profissional.
+                </p>
+
+                <p>
+                    Nosso objetivo é oferecer materiais digitais
+                    desenvolvidos com atenção, organização e compromisso
+                    com a experiência de quem busca aprender.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="courses section" id="produtos">
+            <div class="container">
+
+                <span class="section-label">NOSSO CATÁLOGO</span>
+
+                <h2>
+                    Explore nossos
+                    <span>produtos digitais.</span>
+                </h2>
+
+                <p class="section-description">
+                    Conteúdos desenvolvidos para compartilhar
+                    conhecimento e ajudar você em diferentes
+                    momentos da sua jornada.
+                </p>
+
+
+                <div class="course-grid">
+
+                    <!-- GUIA DE SAÚDE -->
+                    <article class="course-card">
+
+                        <div class="course-tag">
+                            GUIA DE SAÚDE
+                        </div>
+
+                        <div class="course-icon" aria-hidden="true">
+                            ♥
+                        </div>
+
+                        <h3>
+                            Memórias e afeto: como cuidar de quem sempre cuidou de você
+                        </h3>
+
+                        <p>
+                            Um guia com conteúdo informativo e acolhedor
+                            sobre o cuidado, a memória e a importância
+                            do afeto na convivência com pessoas com
+                            Alzheimer.
+                        </p>
+
+                        <a href="guia-alzheimer.html" class="btn btn-primary course-button">
+                            Conhecer o guia
+                        </a>
+
+                    </article>
+
+
+                    <!-- FUTUROS PRODUTOS -->
+                    <article class="course-card future-card">
+
+                        <div class="course-tag">
+                            EM BREVE
+                        </div>
+
+                        <div class="course-icon" aria-hidden="true">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Novos conhecimentos estão chegando
+                        </h3>
+
+                        <p>
+                            Estamos preparando novos materiais digitais
+                            com conteúdos e temas variados para ampliar
+                            nosso catálogo.
+                        </p>
+
+                        <span class="coming-soon">
+                            Novidades em breve
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTATO -->
+        <section class="contact section" id="contato">
+            <div class="container">
+
+                <span class="section-label">FALE CONOSCO</span>
+
+                <h2>
+                    Vamos nos
+                    <span>conectar?</span>
+                </h2>
+
+                <p>
+                    Acompanhe a Nexora Digital e fique por dentro
+                    das novidades, lançamentos e novos conteúdos.
+                </p>
+
+                <div class="contact-links">
+
+                    <!-- Substitua os endereços abaixo pelos seus links reais -->
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        TikTok
+                    </a>
+
+                    <a href="mailto:contato@nexoradigital.com">
+                        E-mail
                     </a>
 
                 </div>
 
             </div>
-
-        </section>
-
-
-        <!-- SOBRE A EMPRESA -->
-
-        <section class="about section" id="sobre">
-
-            <span class="eyebrow">
-                QUEM SOMOS
-            </span>
-
-            <h2>
-                Conhecimento que abre
-                <span>novos caminhos.</span>
-            </h2>
-
-            <p>
-                A Nexora Digital é uma empresa dedicada
-                à educação, ao conhecimento e à
-                disponibilização de conteúdos digitais.
-
-                Nosso objetivo é oferecer materiais
-                e experiências de aprendizado que
-                contribuam para o desenvolvimento
-                pessoal e profissional das pessoas.
-            </p>
-
-        </section>
-
-
-        <!-- CATÁLOGO DE PRODUTOS -->
-
-        <section class="courses section" id="cursos">
-
-            <span class="eyebrow">
-                NOSSO CATÁLOGO
-            </span>
-
-            <h2>
-                Conheça nossos
-                <span>produtos.</span>
-            </h2>
-
-            <p class="section-description">
-                Explore nossos guias e cursos digitais.
-                Conhecimento e informação para diferentes
-                momentos e necessidades da sua vida.
-            </p>
-
-
-            <div class="course-grid">
-
-
-                <!-- PRODUTO 01: GUIA DE ALZHEIMER -->
-
-                <article class="course-card">
-
-                    <div class="course-image">
-
-                        <span>
-                            GUIA DE SAÚDE • ALZHEIMER
-                        </span>
-
-                    </div>
-
-                    <div class="course-info">
-
-                        <span class="course-category">
-                            GUIA DE SAÚDE
-                        </span>
-
-                        <h3>
-                            Memórias e afeto: como cuidar
-                            de quem sempre cuidou de você
-                        </h3>
-
-                        <p>
-                            Um guia informativo dedicado
-                            a familiares e cuidadores de
-                            pessoas com Alzheimer.
-
-                            Conheça orientações sobre
-                            acolhimento, cuidado diário,
-                            compreensão e os desafios
-                            dessa jornada.
-                        </p>
-
-                        <a href="#contato" class="course-link">
-                            Conhecer o guia →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PRODUTO 02: PRÓXIMOS LANÇAMENTOS -->
-
-                <article class="course-card coming-soon">
-
-                    <div class="course-image">
-
-                        <span>
-                            NOVOS CONHECIMENTOS
-                        </span>
-
-                    </div>
-
-                    <div class="course-info">
-
-                        <span class="course-category">
-                            EM BREVE
-                        </span>
-
-                        <h3>
-                            Novos cursos e guias
-                        </h3>
-
-                        <p>
-                            Estamos preparando novos
-                            materiais e experiências
-                            de aprendizado para ampliar
-                            nosso catálogo de produtos.
-                        </p>
-
-                        <span class="course-link">
-                            Em breve
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-            <p class="section-description" style="margin-top: 30px; font-size: 12px;">
-                Os conteúdos de saúde possuem caráter
-                informativo e educativo. Não substituem
-                avaliação, diagnóstico ou acompanhamento
-                de profissionais de saúde.
-            </p>
-
-        </section>
-
-
-        <!-- REDES SOCIAIS E CONTATO -->
-
-        <section class="social section" id="contato">
-
-            <span class="eyebrow">
-                CONECTE-SE CONOSCO
-            </span>
-
-            <h2>
-                Acompanhe a
-                <span>Nexora Digital.</span>
-            </h2>
-
-            <p>
-                Fique por dentro das nossas novidades,
-                lançamentos, conteúdos e atualizações
-                através dos nossos canais oficiais.
-            </p>
-
-
-            <div class="social-links">
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    TikTok
-                </a>
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    YouTube
-                </a>
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    WhatsApp
-                </a>
-
-            </div>
-
         </section>
 
     </main>
 
 
     <!-- RODAPÉ -->
-
     <footer class="footer">
+        <div class="container">
 
-        <a href="#inicio" class="logo">
-            NEXORA<span>.</span>
-        </a>
+            <a href="index.html" class="logo footer-logo">
+                NEXORA<span> DIGITAL</span>
+            </a>
 
-        <p>
-            © 2026 Nexora Digital.
-            Todos os direitos reservados.
-        </p>
+            <p>
+                Conhecimento que transforma. Ideias que inspiram.
+            </p>
 
-        <a href="#inicio">
-            Voltar ao topo ↑
-        </a>
+            <p class="copyright">
+                © <span id="current-year"></span> Nexora Digital.
+                Todos os direitos reservados.
+            </p>
 
+        </div>
     </footer>
 
 
     <!-- JAVASCRIPT -->
-
     <script src="script.js"></script>
 
+    <script>
+        // Atualiza automaticamente o ano do rodapé.
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+
+        // Menu responsivo para dispositivos móveis.
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navbar.classList.toggle("active");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Fechar menu" : "Abrir menu"
+            );
+
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        // Fecha o menu após clicar em um link.
+        navbar.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navbar.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Abrir menu");
+                menuToggle.textContent = "☰";
+            });
+        });
+    </script>
+
 </body>
-
 </html>
-
-        padding: 75px 22px;
-    }
-
-}
